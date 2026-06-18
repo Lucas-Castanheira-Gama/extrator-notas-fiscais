@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Saída gerada
+data/saida/*.xlsx
+data/notas_exemplo/*.pdf
+
+# Selenium / drivers
+*.log
+geckodriver.log
+chromedriver
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
