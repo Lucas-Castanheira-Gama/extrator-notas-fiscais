@@ -1,8 +1,10 @@
 # Extrator de Notas Fiscais → Planilha → Cadastro Automático
 
-Automação em Python que **lê PDFs de notas fiscais, extrai os dados, monta uma planilha e preenche um formulário web automaticamente** com Selenium. Um trabalho que feito à mão levaria horas roda em minutos.
+Automação em Python que **lê PDFs de notas fiscais, extrai os dados e monta uma planilha** — com a etapa de **preenchimento de formulário web (Selenium) em desenvolvimento**. Um trabalho que feito à mão levaria horas roda em minutos.
 
 > Projeto de portfólio baseado em uma automação que desenvolvi e usei em produção (em um órgão público federal), reconstruído aqui com dados **100% fictícios** para ser público com segurança.
+
+> **Status:** etapas 1 (extração) e 2 (geração de planilha) concluídas e funcionando. Etapa 3 (preenchimento via Selenium) em desenvolvimento.
 
 ---
 
@@ -16,12 +18,12 @@ Cadastrar nota fiscal na mão é lento e propenso a erro: abrir cada PDF, copiar
    PDFs das notas  ──►  [1] Extrai os campos  ──►  [2] Monta planilha .xlsx
                                                           │
                                                           ▼
-                                          [3] Preenche o formulário web (Selenium)
+                                          [3] Preenche o formulário web (Selenium) — em desenvolvimento
 ```
 
 1. **Extração** — lê cada PDF com `pdfplumber` e captura número, data, CNPJ, razão social e valor.
 2. **Planilha** — consolida tudo num `.xlsx` formatado com `openpyxl`.
-3. **Cadastro** — abre o navegador com `Selenium` e preenche o formulário, uma nota por vez, com tratamento de erro.
+3. **Cadastro** *(em desenvolvimento)* — abrirá o navegador com `Selenium` e preencherá o formulário, uma nota por vez, com tratamento de erro.
 
 ## Resultado
 
